@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap');
+$bg-light: #f2f2f2;
+$font-dark: #2c4552;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+h1,
+p {
+    color: $font-dark;
+}
+
+h1 {
+    font-weight: 700;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+p {
+    margin-top: 0;
+    font-weight: 300;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .columns {
+        min-width: 60rem;
+        max-width: calc(100vh-2rem);
+    }
+    .text {
+        // column count jaotab teksti teatud tulpade arvuks
+        // column-count: 3;
+        // column width määrab ühe tulba laiuse ja jaoatab nii paljudeks tulpadeks palju ruumi on
+        // column-width: 10rem;
+        // columns on lühend count'i ja width'i jaoks
+        -moz-columns: 3 10rem;
+        columns: 3 10rem;
+        // column-rule määrab piirjoone tulpade vahel
+        column-rule: 1px solid #ccc;
+        // column-gap määrab vahe suuruse tulpade vahel
+        column-gap: 2rem;
+    }
+    .intro {
+        // column-span venitab ühe lõigu üle teatud tulpade arvu.
+        -moz-column-span: all;
+        column-span: all;
+    }
+}

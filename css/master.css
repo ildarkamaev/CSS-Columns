@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Merriweather', serif; }
+
+h1,
+p {
+  color: #2c4552; }
+
+h1 {
+  font-weight: 700;
+  text-align: center;
+  margin: 2rem 0; }
+
+p {
+  margin-top: 0;
+  font-weight: 300;
+  line-height: 1.8;
+  text-align: justify; }
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  body .columns {
+    width: 60rem;
+    max-width: calc(100vh-2rem); }
+  body .text {
+    -webkit-column-count: 3;
+            column-count: 3;
+    -webkit-column-width: 10rem;
+            column-width: 10rem;
+    -webkit-column-rule: 1px solid #ccc;
+            column-rule: 1px solid #ccc;
+    -webkit-column-gap: 2rem;
+            column-gap: 2rem; }
+  body .intro {
+    -webkit-column-span: all;
+            column-span: all; }
+/*# sourceMappingURL=master.css.map */
